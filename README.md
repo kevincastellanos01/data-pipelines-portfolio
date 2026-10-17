@@ -1,18 +1,16 @@
-# Data Pipelines Portfolio
+# Data pipelines
 
 **Kevin Daniel Castellanos Chan**
 
-Four projects that follow one path through a data pipeline: query a relational database, pull records from an API, land them in a raw store and a clean store, and schedule the job.
+I built these pipelines to move data from a source into a shape that can be queried again. Each folder is one stage of that path.
 
-| Project | What it shows | Stack |
+| Project | Decision it forced | Stack |
 | --- | --- | --- |
-| [SQL analytics](sql-analytics/) | Filters, aggregates, and a ranked product list on the Northwind schema | SQL, SQLite |
-| [API requests](api-requests/) | A small extract, transform, and load script against a public REST API | Python, requests |
-| [MongoDB ETL](mongodb-etl/) | Paginated ingestion, a raw layer, a clean layer, and upserts | Python, MongoDB, Docker |
-| [Airflow orchestration](airflow-orchestration/) | A daily weather DAG, plus a parallel API workflow | Apache Airflow, pandas |
+| [SQL analytics](sql-analytics/) | Which rows belong in an operational report, and which should stay out | SQL, SQLite |
+| [API requests](api-requests/) | What to keep from a large nested response | Python, requests |
+| [MongoDB ETL](mongodb-etl/) | Where the original payload lives, and how a second run avoids duplicates | Python, MongoDB, Docker |
+| [Airflow orchestration](airflow-orchestration/) | How a daily job passes data between tasks and what happens if it was paused | Apache Airflow, pandas |
 
-Each folder stands on its own. The next one adds a tool the previous one did not need.
+The SQL folder is the questions I want answered from tables that already exist. The API script is the first time the data does not exist locally, so the script has to define the record it will store. MongoDB is where that record is split into a raw layer and a clean layer. Airflow is what runs a job every day and carries the payload from extract to load.
 
-SQL is the analytical layer. The API script is the first ingestion. MongoDB is where raw and cleaned documents live. Airflow is what runs the job on a schedule and passes data between tasks.
-
-Local virtual environments, scheduler logs, and lab notes are not in this repository. The MongoDB passwords in `docker-compose.yml` are defaults for that local stack only.
+The MongoDB passwords in `docker-compose.yml` belong to that local stack. Override them with `MONGO_HOST`, `MONGO_PORT`, `MONGO_USERNAME`, and `MONGO_PASSWORD`.
