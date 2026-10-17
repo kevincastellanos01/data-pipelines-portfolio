@@ -1,0 +1,39 @@
+{
+  "execution_date": "2026-03-22",
+  "users": {
+    "total_count": 10,
+    "unique_domains": 10,
+    "top_domains": {
+      "april.biz": 1,
+      "melissa.tv": 1,
+      "yesenia.net": 1
+    },
+    "cities": {
+      "Gwenborough": 1,
+      "Wisokyburgh": 1,
+      "McKenziehaven": 1,
+      "South Elvis": 1,
+      "Roscoeview": 1,
+      "South Christy": 1,
+      "Howemouth": 1,
+      "Aliyaview": 1,
+      "Bartholomebury": 1,
+      "Lebsackbury": 1
+    }
+  },
+  "posts": {
+    "total_count": 100,
+    "by_user": {
+      "1": 10,
+      "2": 10,
+      "3": 10,
+      "4": 10,
+      "5": 10
+    },
+    "avg_length": 160.64,
+    "categories": {
+      "medium": 91,
+      "long": 9
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "record": {
+    "location": "Berlin",
+    "latitude": 52.52,
+    "longitude": 13.419998,
+    "timezone": "Europe/Berlin",
+    "observation_time": "2026-03-24T01:00",
+    "temperature_c": 8.0,
+    "temperature_f": 46.4,
+    "feels_like_c": 5.3,
+    "feels_like_f": 41.54,
+    "humidity_percent": 58.0,
+    "wind_speed_kmh": 4.4,
+    "weather_code": 3,
+    "temperature_category": "cold",
+    "wind_category": "calm",
+    "daily_avg_temp_c": 11.34,
+    "daily_min_temp_c": 6.5,
+    "daily_max_temp_c": 16.1,
+    "daily_avg_feels_like_c": 8.0,
+    "daily_avg_humidity_percent": 49.88,
+    "hottest_hour": "2026-03-24 16:00:00",
+    "hottest_hour_temp_c": 16.1
+  },
+  "stats": {
+    "hourly_points": 24,
+    "avg_temp_c": 11.34,
+    "min_temp_c": 6.5,
+    "max_temp_c": 16.1,
+    "avg_feels_like_c": 8.0,
+    "avg_humidity_percent": 49.88
+  }
+}

@@ -1,0 +1,2 @@
+location,latitude,longitude,timezone,observation_time,temperature_c,temperature_f,feels_like_c,feels_like_f,humidity_percent,wind_speed_kmh,weather_code,temperature_category,wind_category,daily_avg_temp_c,daily_min_temp_c,daily_max_temp_c,daily_avg_feels_like_c,daily_avg_humidity_percent,hottest_hour,hottest_hour_temp_c
+Berlin,52.52,13.419998,Europe/Berlin,2026-03-24T01:00,8.0,46.4,5.3,41.54,58.0,4.4,3,cold,calm,11.34,6.5,16.1,8.0,49.88,2026-03-24 16:00:00,16.1
